@@ -1,0 +1,28 @@
+{
+  "name": "fscache-loader",
+  "version": "0.0.1",
+  "description": "webpack cache loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/towry/fscache-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader"
+  ],
+  "author": "Towry Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/towry/fscache-loader/issues"
+  },
+  "homepage": "https://github.com/towry/fscache-loader#readme",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "chalk": "^1.1.3",
+    "loader-utils": "^0.2.16"
+  }
+}
