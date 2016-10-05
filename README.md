@@ -2,7 +2,7 @@
 
 Use this loader to speed up your webpack build time a bit.
 
-Make the build ~73%~ faster after first build!
+Make the build _73%_ faster after first build!
 
 Note: you should only use this in production.
 
