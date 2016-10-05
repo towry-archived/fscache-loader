@@ -160,5 +160,7 @@ function getRelativePath(fullpath, context) {
 	var p = fullpath.replace(context, '');
 	if (p[0] === '/') {
 		return p.substr(1);
-	}
+	} 
+
+	return p;
 }
