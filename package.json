@@ -1,6 +1,6 @@
 {
   "name": "fscache-loader",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "webpack cache loader",
   "main": "index.js",
   "scripts": {
