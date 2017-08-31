@@ -18,11 +18,11 @@ const FC_HASH_COMMENT_START = "/**! fcVer: ";
 const FC_HASH_COMMENT_END = " */";
 const FC_HASH_COMMENT_START_TRIM = FC_HASH_COMMENT_START.trim();
 const FC_HASH_MAX_LENGTH = FC_HASH_COMMENT_START.length +
-													FC_HASH_COMMENT_END.length +
-													/* md5 string length */
-													32 +
-													/* extras */
-													10;
+		FC_HASH_COMMENT_END.length +
+		/* md5 string length */
+		32 +
+		/* extras */
+		10;
 
 function cacheLoader(source) {
 	this.cacheable && this.cacheable();
