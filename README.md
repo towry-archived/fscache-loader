@@ -23,18 +23,13 @@ module.exports = {
 
 	module: {
 		loaders: [
-			{ test: /\.js$/, exclude: /node_modules/, loaders: ['fscache', 'babel'] },
+			{ test: /\.js$/, exclude: /node_modules/, loaders: ['fscache-loader?+silent', 'babel-loader'] },
 			// Will not cache less files, only cache the js script for requiring the less files.
-			// If you put fscache-loader before less-loader, then it will only 
+			// If you put fscache-loader before less-loader, then it will only
 			// cache the entry less file, and modify the sub module file will not cause
 			// the cache invalid.
-			{ test: /\.less$/, loaders: ['fscache', 'style', 'css', 'less']},
+			{ test: /\.less$/, loaders: ['fscache-loader?+silent', 'style-loader', 'css-loader', 'less-loader']},
 		]
-	},
-
-	fscacheLoader: {
-		// Set to false to output some information.
-		silent: false
 	}
 }
 ```
@@ -45,4 +40,4 @@ MIT License
 
 ---
 
-&copy; 2016 Towry Wang
+&copy; 2017 Towry Wang
